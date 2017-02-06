@@ -1,0 +1,140 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="stvApp">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Samsung TV Wi-Fi controller</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/stv.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Samsung TV Wi-Fi controller</h1>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-danger btn-lg glyphicon glyphicon-off" ng-click="apply_command('poweroff')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-volume-off" ng-click="apply_command('mute')" >
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-volume-down" ng-click="apply_command('voldown')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-volume-up" ng-click="apply_command('volup')">
+			</button>
+		</div>
+	</br>
+	</br>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-log-in" ng-click="apply_command('source')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-menu-left" ng-click="apply_command('chdown')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-menu-right" ng-click="apply_command('chup')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-menu-hamburger" ng-click="apply_command('ch_list')">
+			</button>
+		</div>
+	</br>
+	</br>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-stop" ng-click="apply_command('stop')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-play" ng-click="apply_command('play')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-pause" ng-click="apply_command('pause')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-forward" ng-click="apply_command('ff')">
+			</button>
+		</div>
+	</br>
+	</br>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default-outline btn-lg glyphicon-chevron-down">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-chevron-up" ng-click="apply_command('up')">
+			</button>
+		</div>
+	</br>
+	</br>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-chevron-left" ng-click="apply_command('left')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-check" ng-click="apply_command('enter')">
+			</button>
+		</div>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-chevron-right" ng-click="apply_command('right')">
+			</button>
+		</div>
+	</br>
+	</br>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default-outline btn-lg glyphicon-chevron-down" >
+			</button>
+		</div>
+		<div class=" pull-left-center">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-chevron-down" ng-click="apply_command('down')">
+			</button>
+		</div>
+	</br>
+		<div class=" pull-left">
+			<button type="button" class="btn btn-default-outline btn-lg glyphicon glyphicon-cog" ng-click="apply_command('menu')" >
+			</button>
+		</div>
+		<div class=" pull-left-center">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-remove-circle" ng-click="apply_command('exit')">
+			</button>
+		</div>
+		<div class=" pull-left-center">
+			<button type="button" class="btn btn-default btn-lg glyphicon glyphicon-wrench" ng-click="apply_command('tools')">
+			</button>
+		</div>
+	</br>
+		<div class=" pull-left-center">
+			<button type="button" class="btn btn-default btn-lg glyphicon " ng-click="apply_command('prech')">
+			PRE-CH</button>
+		</div>
+</div>
+
+
+	</div>
+</body>
+</html>

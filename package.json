@@ -1,0 +1,19 @@
+{
+  "name": "stv_api",
+  "main": "server.js",
+  "version": "0.0.1",
+  "description": "Samsung TV controller rest API.",
+  "author": "Germán Robles",
+  "url" : "https://github.com/german-robles/samsung-remote-control",
+  "email" : "ger.robles89@gmail.com",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.14.0",
+    "express-session": "~1.14.1",
+    "method-override": "~2.3.6",
+    "morgan": "~1.7.0",
+    "samsung-remote": "*"
+  }
+}
