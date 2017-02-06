@@ -60,5 +60,7 @@ npm install -g nodemon
 ```sh
 nodemon server.js
 ```
+### Fire up a Web Browser:
+  http://localhost:8080 or your server IP
 
    [NodeJS page]: <https://nodejs.org/en/download/package-manager/>
