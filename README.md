@@ -1,3 +1,4 @@
+# Tested on < 2016 Samsung TV's
 # Setup:
 ### Create config.js as sample:
 ```javascript
